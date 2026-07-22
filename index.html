@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2b49" />
+
+  <title>OCNJ.ETH | Ocean City, Curated</title>
+  <meta
+    name="description"
+    content="A refined independent guide to Ocean City, New Jersey—dining, shopping, recreation, wellness, local favorites, community support and featured partners."
+  />
+
+  <meta property="og:title" content="OCNJ.ETH | Ocean City, Curated" />
+  <meta
+    property="og:description"
+    content="Coastal living, curated for Ocean City, New Jersey."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-greece-ocnj.svg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Manrope:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="announcement-bar">
+      <div class="shell announcement-inner">
+        <span>
+          Private independent visitor guide — not affiliated with the City of
+          Ocean City or any government agency.
+        </span>
+        <a href="disclaimer.html">Read the disclaimer →</a>
+      </div>
+    </div>
+
+    <div class="shell navigation">
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links nav-left" id="navLinksLeft" aria-label="Primary">
+        <a href="#experiences">Explore</a>
+        <a href="#map">Map</a>
+        <a href="#dining">Eat & Drink</a>
+        <a href="#shopping">Shop</a>
+      </nav>
+
+      <a class="brand" href="#top" aria-label="OCNJ.ETH home">
+        <img src="assets/logo.svg" alt="OCNJ.ETH — Ocean City, curated" />
+      </a>
+
+      <nav class="nav-links nav-right" id="navLinksRight" aria-label="Secondary">
+        <a href="#wellness">Wellness</a>
+        <a href="#locals">Local Guide</a>
+        <a href="#partner">Advertise</a>
+        <a class="search-link" href="#newsletter" aria-label="Newsletter">✦</a>
+      </nav>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#experiences">Explore</a>
+      <a href="#map">Interactive Map</a>
+      <a href="#dining">Eat & Drink</a>
+      <a href="#shopping">Shop</a>
+      <a href="#wellness">Wellness</a>
+      <a href="#locals">Local Guide</a>
+      <a href="#partner">Advertise</a>
+      <a class="mobile-nav-cta" href="#support">Support OCNJ.ETH</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="shell hero-content">
+        <p class="eyebrow">Ocean City, New Jersey</p>
+
+        <p class="hero-independent-badge">
+          Independent private guide • No government affiliation
+        </p>
+
+        <h1>
+          Coastal living.
+          <span>Curated for you.</span>
+        </h1>
+
+        <p class="hero-copy">
+          The independent guide for families who love thoughtful places,
+          beautiful details and the best of life by the sea.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-navy" href="#experiences">Explore OCNJ</a>
+          <a class="button button-glass" href="#feature">See this week’s feature</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIGURABLE FEATURED PLACEMENT -->
+    <section class="featured-wrap" id="feature">
+      <div class="shell">
+        <article class="featured-card" id="featuredCard">
+          <button
+            class="feature-arrow feature-arrow-left"
+            id="featurePrevious"
+            type="button"
+            aria-label="Previous featured item"
+          >
+            ‹
+          </button>
+
+          <div class="featured-copy">
+            <div class="feature-label-row">
+              <span class="feature-kicker" id="featureKicker">
+                Featured this week
+              </span>
+
+              <span class="paid-label" id="featurePaidLabel" hidden>
+                Featured Partner
+              </span>
+            </div>
+
+            <h2 id="featureTitle">Summer, elevated.</h2>
+
+            <p id="featureDescription">
+              A refined coastal experience selected by OCNJ.ETH.
+            </p>
+
+            <a
+              class="button button-sea"
+              id="featureLink"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discover more
+            </a>
+
+            <div class="feature-dots" id="featureDots" aria-label="Featured slides"></div>
+          </div>
+
+          <div class="featured-image">
+            <img
+              id="featureImage"
+              src="assets/feature-brunch.svg"
+              alt="Featured Ocean City experience"
+            />
+          </div>
+
+          <button
+            class="feature-arrow feature-arrow-right"
+            id="featureNext"
+            type="button"
+            aria-label="Next featured item"
+          >
+            ›
+          </button>
+        </article>
+
+        <p class="feature-disclosure">
+          Editorial features are chosen by OCNJ.ETH. Paid placements are clearly
+          labeled “Featured Partner.”
+        </p>
+      </div>
+    </section>
+
+    <!-- CATEGORY CARDS -->
+    <section class="section category-section" id="experiences">
+      <div class="shell">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow dark">Curated experiences</p>
+          <h2>Five ways to make Ocean City feel special.</h2>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card" id="dining">
+            <div class="category-image">
+              <img src="assets/category-dining.svg" alt="Elegant coastal dining" />
+            </div>
+            <div class="category-icon">⌑</div>
+            <h3>Dining</h3>
+            <p>Coastal flavors, old-school favorites and unforgettable meals.</p>
+            <a href="#guide">Explore dining →</a>
+          </article>
+
+          <article class="category-card" id="shopping">
+            <div class="category-image">
+              <img src="assets/category-shopping.svg" alt="Ocean City boutique shopping" />
+            </div>
+            <div class="category-icon">◇</div>
+            <h3>Shopping</h3>
+            <p>Boutiques, home finds, gifts and beautiful local discoveries.</p>
+            <a href="#guide">Explore shopping →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-image">
+              <img src="assets/category-recreation.svg" alt="Family recreation on the beach" />
+            </div>
+            <div class="category-icon">△</div>
+            <h3>Recreation</h3>
+            <p>Beach days, paddling, family fun and outdoor experiences.</p>
+            <a href="#guide">Explore recreation →</a>
+          </article>
+
+          <article class="category-card" id="wellness">
+            <div class="category-image">
+              <img src="assets/category-wellness.svg" alt="Coastal yoga and wellness" />
+            </div>
+            <div class="category-icon">✣</div>
+            <h3>Fitness</h3>
+            <p>Wellness, movement, active mornings and mindful living.</p>
+            <a href="#guide">Explore fitness →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-image">
+              <img src="assets/category-local.svg" alt="Ocean City local favorite" />
+            </div>
+            <div class="category-icon">♡</div>
+            <h3>Local Favorites</h3>
+            <p>Beloved traditions, neighborhood finds and hidden gems.</p>
+            <a href="#locals">Explore local favorites →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE FILTERS -->
+    <section class="section guide-section" id="guide">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow dark">Plan by budget and mood</p>
+            <h2>Free. Considered. Indulgent.</h2>
+          </div>
+
+          <p>
+            Choose a spending level and then filter by dining, shopping,
+            recreation, fitness, water, land or air. Ratings are OCNJ.ETH
+            editorial scores—not public-review averages.
+          </p>
+        </div>
+
+        <div class="filter-panel">
+          <div class="tier-filters">
+            <button class="tier-button active" data-tier="all" type="button">
+              <span>All</span>
+              <strong>Everything</strong>
+            </button>
+
+            <button class="tier-button" data-tier="free" type="button">
+              <span>Free</span>
+              <strong>$0 experiences</strong>
+            </button>
+
+            <button class="tier-button" data-tier="medium" type="button">
+              <span>Considered</span>
+              <strong>$–$$</strong>
+            </button>
+
+            <button class="tier-button" data-tier="premium" type="button">
+              <span>Indulgent</span>
+              <strong>$$$</strong>
+            </button>
+          </div>
+
+          <div class="category-filters">
+            <button class="category-filter active" data-category="all" type="button">All</button>
+            <button class="category-filter" data-category="dining" type="button">Dining</button>
+            <button class="category-filter" data-category="shopping" type="button">Shopping</button>
+            <button class="category-filter" data-category="recreation" type="button">Recreation</button>
+            <button class="category-filter" data-category="fitness" type="button">Fitness</button>
+            <button class="category-filter" data-category="water" type="button">Water</button>
+            <button class="category-filter" data-category="land" type="button">Land</button>
+            <button class="category-filter" data-category="air" type="button">Air</button>
+          </div>
+        </div>
+
+        <div class="experience-grid" id="experienceGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- INTERACTIVE ISLAND MAP -->
+    <section class="section map-section" id="map">
+      <div class="shell">
+        <div class="section-heading split-heading map-heading">
+          <div>
+            <p class="eyebrow dark">Explore the island</p>
+            <h2>Businesses, parking and every bridge into OCNJ.</h2>
+          </div>
+
+          <p>
+            Move around the island, search curated listings, find municipal
+            parking, use your location and open turn-by-turn directions. The
+            map also reaches Longport, Somers Point, Marmora and Strathmere.
+          </p>
+        </div>
+
+        <div class="independent-map-alert">
+          <strong>Independent map:</strong>
+          This is a privately operated convenience tool. It is not an official
+          City of Ocean City, county, state, parking, transportation or emergency map.
+          <a href="https://www.ocnj.us/" target="_blank" rel="noopener noreferrer">
+            Use the official city website for government services.
+          </a>
+        </div>
+
+        <div class="map-layout">
+          <aside class="map-sidebar" aria-label="Map search and filters">
+            <div class="map-search-wrap">
+              <label for="mapSearch">Search the map</label>
+              <input
+                id="mapSearch"
+                type="search"
+                placeholder="Business, parking, bridge or area"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="map-filter-group">
+              <p>Show</p>
+
+              <div class="map-filter-buttons" id="mapFilterButtons">
+                <button class="map-filter-button active" data-map-category="all" type="button">Everything</button>
+                <button class="map-filter-button" data-map-category="parking" type="button">Parking</button>
+                <button class="map-filter-button" data-map-category="dining" type="button">Dining</button>
+                <button class="map-filter-button" data-map-category="shopping" type="button">Shopping</button>
+                <button class="map-filter-button" data-map-category="recreation" type="button">Recreation</button>
+                <button class="map-filter-button" data-map-category="fitness" type="button">Fitness</button>
+                <button class="map-filter-button" data-map-category="bridge" type="button">Bridges</button>
+                <button class="map-filter-button" data-map-category="attraction" type="button">Landmarks</button>
+                <button class="map-filter-button" data-map-category="nearby" type="button">Nearby areas</button>
+              </div>
+            </div>
+
+            <div class="map-action-grid">
+              <button class="map-action-button" id="mapLocateButton" type="button">Use my location</button>
+              <button class="map-action-button" id="mapNearestParkingButton" type="button">Nearest parking</button>
+              <button class="map-action-button" id="mapFitButton" type="button">Show full island</button>
+              <a
+                class="map-action-button"
+                href="https://www.ocnj.us/parking"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Official parking finder</a>
+            </div>
+
+            <div class="bridge-shortcuts">
+              <p>Bridge shortcuts</p>
+              <button type="button" data-map-focus="longport-bridge">Longport</button>
+              <button type="button" data-map-focus="route-52-bridge">9th Street</button>
+              <button type="button" data-map-focus="34th-street-bridge">34th Street</button>
+              <button type="button" data-map-focus="corsons-inlet-bridge">South end</button>
+            </div>
+
+            <div class="map-status" id="mapStatus" aria-live="polite">
+              Loading curated map locations…
+            </div>
+
+            <div class="map-results" id="mapResults"></div>
+
+            <div class="parking-reality-note">
+              <strong>Parking availability:</strong>
+              Pins show known municipal lot locations, not live occupancy. The
+              official Ocean City Parking Spot Finder provides available-space
+              guidance for participating paid municipal lots.
+            </div>
+          </aside>
+
+          <div class="map-canvas-wrap">
+            <div
+              id="ocnjMap"
+              class="ocnj-map"
+              aria-label="Interactive map of Ocean City, New Jersey"
+            ></div>
+
+            <div class="map-legend" aria-label="Map legend">
+              <span><i class="legend-dot parking"></i>Parking</span>
+              <span><i class="legend-dot business"></i>Business</span>
+              <span><i class="legend-dot bridge"></i>Bridge</span>
+              <span><i class="legend-dot nearby"></i>Nearby</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-disclaimer">
+          <p>
+            Pins for street intersections, lots and bridge approaches may mark
+            the practical center rather than an exact driveway or entrance.
+            Follow posted signs, closures and official instructions.
+          </p>
+
+          <p>
+            The official southern road connection is the
+            <strong>Corsons Inlet Bridge</strong> near the 59th Street end of
+            Ocean City. A separate 55th Street area pin is included because
+            visitors sometimes use that description informally.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERIFIED LOCAL FAVORITES -->
+    <section class="section local-favorites-section" id="locals">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow dark">Verified local favorites</p>
+            <h2>Real Ocean City places you can use now.</h2>
+          </div>
+
+          <p>
+            These businesses and destinations were checked against current
+            official pages or current Ocean City visitor information in July
+            2026. Seasonal hours and availability can still change.
+          </p>
+        </div>
+
+        <div class="automated-monitor-note">
+          <span class="monitor-dot" aria-hidden="true"></span>
+          <p id="businessMonitorStatus">
+            Automated business monitoring is ready and will display its first
+            check after the GitHub workflow runs.
+          </p>
+        </div>
+
+        <div class="local-favorites-grid">
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current local favorite</span>
+            <p class="local-favorite-type">Breakfast tradition</p>
+            <h3>Brown’s Restaurant</h3>
+            <p>
+              A North End Boardwalk institution best known for breakfast,
+              made-on-premises doughnuts and the family ritual of arriving early.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://oceancityvacation.com/details/browns-restaurant/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visitor listing
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Browns+Restaurant+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current local favorite</span>
+            <p class="local-favorite-type">Old-school casual</p>
+            <h3>Kessel’s Korner</h3>
+            <p>
+              A classic Asbury Avenue stop for breakfast, burgers, sandwiches,
+              ice cream and an uncomplicated family meal.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://www.kesselskorner.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official site
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Kessels+Korner+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current local favorite</span>
+            <p class="local-favorite-type">Food-lover find</p>
+            <h3>Bakeria 1010</h3>
+            <p>
+              Naturally fermented pizza, breads and Italian bakery items with
+              a more distinctive point of view than a standard shore slice.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://www.bakeria1010ocnj.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official site
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Bakeria+1010+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current local favorite</span>
+            <p class="local-favorite-type">Shop-local institution</p>
+            <h3>Stainton’s</h3>
+            <p>
+              A year-round marketplace connecting visitors with many local
+              vendors, artists, makers and small businesses under one roof.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://staintons.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official site
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Staintons+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current local favorite</span>
+            <p class="local-favorite-type">Active local culture</p>
+            <h3>7th Street Surf Shop</h3>
+            <p>
+              A longtime Ocean City surf business offering group and private
+              lessons directly at the protected Seventh Street surfing beach.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://7thstreetsurfshop.com/surf-camp-lessons"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lessons
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=7th+Street+Surf+Shop+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+
+          <article class="local-favorite-card">
+            <span class="verified-badge">Current destination</span>
+            <p class="local-favorite-type">Natural escape</p>
+            <h3>Corson’s Inlet</h3>
+            <p>
+              The quieter southern side of the island for shoreline, wildlife,
+              walking, kayaking and a less-developed coastal experience.
+            </p>
+            <div class="local-favorite-links">
+              <a
+                href="https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official park page
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Corsons+Inlet+State+Park+Ocean+City+NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Map
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT / ADVERTISE / NEWSLETTER -->
+    <section class="section action-section">
+      <div class="shell action-grid">
+        <article class="action-card support-card" id="support">
+          <div class="action-illustration">
+            <img src="assets/support.svg" alt="" aria-hidden="true" />
+          </div>
+
+          <p class="eyebrow dark">Support OCNJ.ETH</p>
+          <h2>Keep the guide useful and independent.</h2>
+          <p>
+            Support original guides, local storytelling and community-focused
+            projects.
+          </p>
+
+          <a class="button button-navy" href="ethereum:OCNJ.eth">
+            Pay OCNJ.ETH
+          </a>
+
+          <div class="mini-payment-row">
+            <img src="assets/ocnj-eth-qr.png" alt="QR code for payment to OCNJ.ETH" />
+            <div>
+              <strong>OCNJ.ETH</strong>
+              <span>Verify the resolved address before sending.</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="action-card partner-card" id="partner">
+          <div class="partner-image"></div>
+          <div class="partner-overlay"></div>
+
+          <div class="partner-content">
+            <p class="eyebrow light">Advertise with us</p>
+            <h2>Reach a polished coastal audience.</h2>
+            <p>
+              Featured placement, seasonal storytelling and clearly labeled
+              sponsorship packages.
+            </p>
+
+            <a
+              class="button button-light"
+              href="mailto:YOUR-EMAIL@gmail.com?subject=OCNJ.ETH Partnership"
+            >
+              Partner with OCNJ.ETH
+            </a>
+          </div>
+        </article>
+
+        <article class="action-card newsletter-card" id="newsletter">
+          <div class="action-illustration">
+            <img src="assets/newsletter.svg" alt="" aria-hidden="true" />
+          </div>
+
+          <p class="eyebrow dark">Stay in the know</p>
+          <h2>The OCNJ weekend edit.</h2>
+          <p>Curated recommendations, local events and exclusive offers.</p>
+
+          <form
+            class="newsletter-form embeddable-buttondown-form"
+            action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME"
+            method="post"
+          >
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+
+            <input
+              id="newsletterEmail"
+              name="email"
+              type="email"
+              placeholder="Your email address"
+              autocomplete="email"
+              required
+            />
+
+            <input type="hidden" name="embed" value="1" />
+            <input type="hidden" name="tag" value="ocnj-website" />
+
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <small>We respect your privacy.</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARTNER PRICING -->
+    <section class="section pricing-section">
+      <div class="shell">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow dark">Business participation</p>
+          <h2>Three ways to be part of the guide.</h2>
+          <p class="pricing-intro">
+            Paid placement never guarantees an editorial rating. Sponsored
+            content is labeled clearly.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="price-name">Community Listing</p>
+            <p class="price-value">Free</p>
+            <ul>
+              <li>Business name and category</li>
+              <li>Website and map links</li>
+              <li>Basic directory placement</li>
+            </ul>
+
+            <a
+              class="button button-outline"
+              href="mailto:YOUR-EMAIL@gmail.com?subject=OCNJ.ETH Free Listing"
+            >
+              Request listing
+            </a>
+          </article>
+
+          <article class="price-card featured-price">
+            <span class="price-ribbon">Best launch option</span>
+            <p class="price-name">Featured Partner</p>
+            <p class="price-value">$149<span>/month</span></p>
+            <ul>
+              <li>Top feature rotation eligibility</li>
+              <li>Expanded story and photography</li>
+              <li>Priority category placement</li>
+              <li>Seasonal offers and social consideration</li>
+            </ul>
+
+            <a
+              class="button button-gold"
+              href="mailto:YOUR-EMAIL@gmail.com?subject=OCNJ.ETH Featured Partner"
+            >
+              Become featured
+            </a>
+          </article>
+
+          <article class="price-card">
+            <p class="price-name">Founding Circle</p>
+            <p class="price-value">$499<span>/month</span></p>
+            <ul>
+              <li>Homepage campaign integration</li>
+              <li>Dedicated editorial-style story</li>
+              <li>Newsletter sponsorship</li>
+              <li>Founding recognition</li>
+            </ul>
+
+            <a
+              class="button button-navy"
+              href="mailto:YOUR-EMAIL@gmail.com?subject=OCNJ.ETH Founding Circle"
+            >
+              Request details
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- INDEPENDENCE DISCLOSURE -->
+    <section class="independence-section" id="independence">
+      <div class="shell independence-grid">
+        <div>
+          <p class="eyebrow light">Independent by design</p>
+          <h2>A private side project created to help visitors and local businesses.</h2>
+        </div>
+
+        <div>
+          <p>
+            OCNJ.ETH is not affiliated with, endorsed by, sponsored by or an
+            official publication of the City of Ocean City, New Jersey; Cape May
+            County; Atlantic County; the State of New Jersey; any tourism,
+            parking, bridge or transportation authority; or any other government body.
+          </p>
+          <div class="independence-links">
+            <a href="disclaimer.html">Read full disclaimer</a>
+            <a href="privacy.html">Privacy notice</a>
+            <a href="https://www.ocnj.us/" target="_blank" rel="noopener noreferrer">Official city website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.svg" alt="OCNJ.ETH" />
+        <p>Live beautifully by the sea.</p>
+      </div>
+
+      <div>
+        <h3>Guide</h3>
+        <a href="#dining">Dining</a>
+        <a href="#shopping">Shopping</a>
+        <a href="#experiences">Recreation</a>
+        <a href="#map">Interactive Map</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#locals">Local Favorites</a>
+      </div>
+
+      <div>
+        <h3>Company</h3>
+        <a href="#partner">Our Partners</a>
+        <a href="#partner">Advertise</a>
+        <a href="#support">Support</a>
+        <a href="mailto:YOUR-EMAIL@gmail.com">Contact</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.ocnj.us/" target="_blank" rel="noopener noreferrer">Official city website</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© <span id="currentYear"></span> OCNJ.ETH.</p>
+      <p>
+        OCNJ.ETH is a privately operated independent guide. It is not affiliated
+        with, endorsed by or an official publication of the City of Ocean City,
+        New Jersey, or any government, tourism, parking or transportation body.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="data/map-locations.js"></script>
+  <script src="map.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
