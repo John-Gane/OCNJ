@@ -1,10 +1,131 @@
 {
-  "checked_at": null,
+  "checked_at": "2026-07-23T01:46:44+00:00",
   "summary": {
     "total": 12,
-    "healthy": 0,
+    "healthy": 12,
     "review": 0,
     "unreachable": 0
   },
-  "businesses": []
+  "businesses": [
+    {
+      "id": "shoppes-at-the-asbury",
+      "name": "Shoppes at the Asbury",
+      "url": "https://staintons.com/shoppes-at-the-asbury/",
+      "final_url": "https://staintons.com/shoppes-at-the-asbury/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Shoppes at the Asbury - Stainton's"
+    },
+    {
+      "id": "dockside-kitchen",
+      "name": "Dockside Kitchen",
+      "url": "https://docksidekitchen.com/",
+      "final_url": "https://docksidekitchen.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Home - Dockside Kitchen"
+    },
+    {
+      "id": "ocean-city-paddle-company",
+      "name": "Ocean City Paddle Company",
+      "url": "https://oceancitypaddlecompany.com/",
+      "final_url": "https://oceancitypaddlecompany.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Ocean City Paddle Company \u2013 Ocean City New Jersey \u2013 Paddleboard & Kayak Rentals, Lessons, and Tours!"
+    },
+    {
+      "id": "browns-restaurant",
+      "name": "Brown's Restaurant",
+      "url": "https://oceancityvacation.com/details/browns-restaurant/",
+      "final_url": "https://oceancityvacation.com/details/browns-restaurant/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Brown's Restaurant | Ocean City NJ"
+    },
+    {
+      "id": "kessels-korner",
+      "name": "Kessel's Korner",
+      "url": "https://www.kesselskorner.com/",
+      "final_url": "https://www.kesselskorner.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Kessel's Korner restaurant in Ocean City, New Jersey, ice cream, lunch, \nburgers, breakfast, lunch, dinner, ice cream, kessel's Korner, breakfast, \ndinner, ice cream, hot dogs, breakfast,restaurant lunch, dinner cheesesteak \nsandwiches new jersey, ocean city"
+    },
+    {
+      "id": "bakeria-1010",
+      "name": "Bakeria 1010",
+      "url": "https://www.bakeria1010ocnj.com/",
+      "final_url": "https://www.bakeria1010ocnj.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Bakery Pizzeria Resturant | Www.bakeria1010.com | Linwood"
+    },
+    {
+      "id": "staintons",
+      "name": "Stainton's",
+      "url": "https://staintons.com/",
+      "final_url": "https://staintons.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Home - Stainton's"
+    },
+    {
+      "id": "7th-street-surf-shop",
+      "name": "7th Street Surf Shop",
+      "url": "https://7thstreetsurfshop.com/surf-camp-lessons",
+      "final_url": "https://7thstreetsurfshop.com/surf-camp-lessons",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Surf Camp / Lessons \u2014 7th Street Surf Shop  |  Ocean City, NJ"
+    },
+    {
+      "id": "corsons-inlet",
+      "name": "Corson's Inlet State Park",
+      "url": "https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/",
+      "final_url": "https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Corson's Inlet State Park - State Parks, Forests & Historic Sites"
+    },
+    {
+      "id": "sweat-oc",
+      "name": "Sweat.oc Studio",
+      "url": "https://sweatocstudio.com/",
+      "final_url": "https://sweatocstudio.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Sweat.oc Studio"
+    },
+    {
+      "id": "golden-galleon",
+      "name": "Golden Galleon Pirate Golf",
+      "url": "https://oceancityfun.com/golf/",
+      "final_url": "https://oceancityfun.com/golf/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Golf \u2013 Playland's Castaway Cove"
+    },
+    {
+      "id": "castaway-cove",
+      "name": "Playland's Castaway Cove",
+      "url": "https://oceancityfun.com/",
+      "final_url": "https://oceancityfun.com/",
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Playland's Castaway Cove \u2013 Ocean City's Original Amusement Park"
+    }
+  ]
 }

@@ -1,13 +1,15 @@
 # OCNJ Business Monitor
 
-The first automated GitHub check has not run yet.
+Last automated check: **2026-07-23T01:46:44+00:00**
 
-After the workflow runs, this file will show:
+## Summary
 
-- Last check time
-- Healthy links
-- Listings needing review
-- New links discovered on monitored official Ocean City directory pages
-- Any directory sources that failed
+- Tracked businesses/destinations: **12**
+- Healthy: **12**
+- Needs review: **0**
+- Unreachable: **0**
+- New official-directory links detected: **0**
 
-The monitor is a private review aid and never removes a listing automatically.
+## Important limitation
+
+This private automation checks public website availability, expected wording, clear permanent-closure language and changes in selected official directory links. It cannot prove that a business is open, discover every new business, or distinguish every temporary website problem from a closure. It never removes a listing automatically. A human should review every alert.
