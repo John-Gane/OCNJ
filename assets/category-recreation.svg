@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs><linearGradient id="crSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcebed"/><stop offset="1" stop-color="#f3dbc0"/></linearGradient></defs>
+  <rect width="500" height="500" fill="url(#crSky)"/>
+  <path d="M0 210c105-18 190-4 280 15 75 16 143 16 220-4v170H0Z" fill="#6e9da2"/>
+  <path d="M0 300c110-15 205-3 292 16 72 16 135 15 208-2" fill="none" stroke="#eef8f7" stroke-width="10"/>
+  <path d="M0 385c140-18 280-9 500 15v100H0Z" fill="#e6d2b4"/>
+  <g transform="translate(185 300)">
+    <circle cx="0" cy="0" r="23" fill="#d4a079"/>
+    <path d="M0 25l-18 62h38L8 25Z" fill="#ffffff"/>
+  </g>
+  <g transform="translate(255 315)">
+    <circle cx="0" cy="0" r="17" fill="#d4a079"/>
+    <path d="M0 18l-12 48h27L6 18Z" fill="#c79a4a"/>
+  </g>
+  <g transform="translate(330 298)">
+    <circle cx="0" cy="0" r="23" fill="#d4a079"/>
+    <path d="M0 25l-18 62h38L8 25Z" fill="#0a2b49"/>
+  </g>
+</svg>

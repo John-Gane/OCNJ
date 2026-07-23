@@ -1,0 +1,49 @@
+name: Deploy OCNJ Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Weekly OCNJ Business Monitor
+    types:
+      - completed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the main branch
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

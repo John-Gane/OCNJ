@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="fbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe3e5"/><stop offset=".65" stop-color="#f2ddc4"/><stop offset="1" stop-color="#d99a7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" fill="url(#fbSky)"/>
+  <circle cx="735" cy="118" r="64" fill="#efd39d"/>
+  <path d="M0 250c180-25 340-11 500 16 155 26 275 19 400-3v190H0Z" fill="#62999a"/>
+  <path d="M0 320c190-18 350-3 510 20 160 23 275 14 390-8" fill="none" stroke="#eef8f7" stroke-width="11"/>
+  <rect x="70" y="350" width="760" height="135" rx="24" fill="#fffaf2"/>
+  <ellipse cx="450" cy="405" rx="260" ry="55" fill="#d8be98"/>
+  <ellipse cx="450" cy="393" rx="210" ry="42" fill="#ffffff"/>
+  <circle cx="385" cy="390" r="64" fill="#c77966"/>
+  <path d="M340 390c34-43 72-47 112 0-35 33-73 33-112 0Z" fill="#f4ead4"/>
+  <circle cx="385" cy="390" r="18" fill="#6c947b"/>
+  <rect x="590" y="338" width="28" height="85" rx="12" fill="#b58a50"/>
+  <path d="M604 338c-32-28-32-66 0-98 32 32 32 70 0 98Z" fill="#e8d6aa"/>
+</svg>

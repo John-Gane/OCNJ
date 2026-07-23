@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Official OCNJ business directory",
+    "url": "https://oceancityvacation.com/business-directory/",
+    "link_pattern": "/details/"
+  },
+  {
+    "name": "Official OCNJ restaurant directory",
+    "url": "https://oceancityvacation.com/where-to-eat/restaurants/",
+    "link_pattern": "/details/"
+  },
+  {
+    "name": "Official OCNJ shopping directory",
+    "url": "https://oceancityvacation.com/shopping/",
+    "link_pattern": "/details/"
+  }
+]

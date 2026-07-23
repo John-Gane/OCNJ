@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="fmSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcebed"/><stop offset="1" stop-color="#f1d8bb"/>
+    </linearGradient>
+    <linearGradient id="fmWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fc1c3"/><stop offset="1" stop-color="#4f8793"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" fill="url(#fmSky)"/>
+  <circle cx="720" cy="120" r="60" fill="#edcc92"/>
+  <path d="M0 245c190-25 350-10 510 17 155 27 270 20 390-1v259H0Z" fill="url(#fmWater)"/>
+  <path d="M0 330c190-17 360-2 520 20 160 23 275 14 380-8" fill="none" stroke="#eef8f8" stroke-width="10"/>
+  <path d="M70 340h570v72H70z" fill="#d6bc96"/>
+  <path d="M80 412h560" stroke="#9c7b5a" stroke-width="15"/>
+  <g transform="translate(200 325)">
+    <circle cx="0" cy="0" r="25" fill="#d4a079"/>
+    <path d="M0 27l-20 80h42L10 28Z" fill="#0a2b49"/>
+  </g>
+  <g transform="translate(330 340)">
+    <circle cx="0" cy="0" r="22" fill="#d4a079"/>
+    <path d="M0 25l-18 72h38L9 25Z" fill="#f5f1ea"/>
+  </g>
+  <g fill="#ffffff" opacity=".88">
+    <path d="M90 115c24-22 50-22 76 0-25-10-50-10-76 0Z"/>
+    <path d="M186 160c20-18 40-18 62 0-21-8-41-8-62 0Z"/>
+  </g>
+</svg>

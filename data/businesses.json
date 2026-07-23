@@ -1,0 +1,105 @@
+[
+  {
+    "id": "shoppes-at-the-asbury",
+    "name": "Shoppes at the Asbury",
+    "url": "https://staintons.com/shoppes-at-the-asbury/",
+    "expected_keywords": [
+      "Shoppes at the Asbury",
+      "vault"
+    ]
+  },
+  {
+    "id": "dockside-kitchen",
+    "name": "Dockside Kitchen",
+    "url": "https://docksidekitchen.com/",
+    "expected_keywords": [
+      "Dockside Kitchen"
+    ]
+  },
+  {
+    "id": "ocean-city-paddle-company",
+    "name": "Ocean City Paddle Company",
+    "url": "https://oceancitypaddlecompany.com/",
+    "expected_keywords": [
+      "Ocean City Paddle",
+      "kayak"
+    ]
+  },
+  {
+    "id": "browns-restaurant",
+    "name": "Brown's Restaurant",
+    "url": "https://oceancityvacation.com/details/browns-restaurant/",
+    "expected_keywords": [
+      "Brown",
+      "Restaurant"
+    ]
+  },
+  {
+    "id": "kessels-korner",
+    "name": "Kessel's Korner",
+    "url": "https://www.kesselskorner.com/",
+    "expected_keywords": [
+      "Kessel",
+      "Korner"
+    ]
+  },
+  {
+    "id": "bakeria-1010",
+    "name": "Bakeria 1010",
+    "url": "https://www.bakeria1010ocnj.com/",
+    "expected_keywords": [
+      "Bakeria 1010"
+    ]
+  },
+  {
+    "id": "staintons",
+    "name": "Stainton's",
+    "url": "https://staintons.com/",
+    "expected_keywords": [
+      "Stainton"
+    ]
+  },
+  {
+    "id": "7th-street-surf-shop",
+    "name": "7th Street Surf Shop",
+    "url": "https://7thstreetsurfshop.com/surf-camp-lessons",
+    "expected_keywords": [
+      "7th Street",
+      "Surf"
+    ]
+  },
+  {
+    "id": "corsons-inlet",
+    "name": "Corson's Inlet State Park",
+    "url": "https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/",
+    "expected_keywords": [
+      "Corson",
+      "Inlet"
+    ]
+  },
+  {
+    "id": "sweat-oc",
+    "name": "Sweat.oc Studio",
+    "url": "https://sweatocstudio.com/",
+    "expected_keywords": [
+      "Sweat"
+    ]
+  },
+  {
+    "id": "golden-galleon",
+    "name": "Golden Galleon Pirate Golf",
+    "url": "https://oceancityfun.com/golf/",
+    "expected_keywords": [
+      "Golden Galleon",
+      "Golf"
+    ]
+  },
+  {
+    "id": "castaway-cove",
+    "name": "Playland's Castaway Cove",
+    "url": "https://oceancityfun.com/",
+    "expected_keywords": [
+      "Castaway Cove"
+    ]
+  }
+]
