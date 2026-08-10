@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-08-03T19:00:36+00:00",
+  "checked_at": "2026-08-10T16:10:38+00:00",
   "summary": {
     "total": 12,
     "healthy": 11,
-    "review": 0,
-    "unreachable": 1
+    "review": 1,
+    "unreachable": 0
   },
   "businesses": [
     {
@@ -22,10 +22,10 @@
       "name": "Dockside Kitchen",
       "url": "https://docksidekitchen.com/",
       "final_url": "https://docksidekitchen.com/",
-      "http_status": 200,
-      "status": "healthy",
-      "reason": "Page reachable and expected content found",
-      "page_title": "Home - Dockside Kitchen"
+      "http_status": 202,
+      "status": "review",
+      "reason": "Expected business name/content was not found",
+      "page_title": ""
     },
     {
       "id": "ocean-city-paddle-company",
@@ -92,10 +92,10 @@
       "name": "Corson's Inlet State Park",
       "url": "https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/",
       "final_url": "https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/",
-      "http_status": null,
-      "status": "unreachable",
-      "reason": "ReadTimeout: HTTPSConnectionPool(host='dep.nj.gov', port=443): Read timed out. (read timeout=15)",
-      "page_title": ""
+      "http_status": 200,
+      "status": "healthy",
+      "reason": "Page reachable and expected content found",
+      "page_title": "Corson's Inlet State Park - State Parks, Forests & Historic Sites"
     },
     {
       "id": "sweat-oc",

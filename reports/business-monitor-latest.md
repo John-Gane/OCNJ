@@ -1,18 +1,18 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-08-03T19:00:36+00:00**
+Last automated check: **2026-08-10T16:10:38+00:00**
 
 ## Summary
 
 - Tracked businesses/destinations: **12**
 - Healthy: **11**
-- Needs review: **0**
-- Unreachable: **1**
+- Needs review: **1**
+- Unreachable: **0**
 - New official-directory links detected: **0**
 
 ## Listings needing review
 
-- **Corson's Inlet State Park** — unreachable: ReadTimeout: HTTPSConnectionPool(host='dep.nj.gov', port=443): Read timed out. (read timeout=15) (https://dep.nj.gov/parksandforests/state-park/corsons-inlet-state-park/)
+- **Dockside Kitchen** — review: Expected business name/content was not found (https://docksidekitchen.com/)
 
 ## Important limitation
 
