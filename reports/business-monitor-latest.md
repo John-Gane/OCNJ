@@ -1,18 +1,14 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-08-10T16:10:38+00:00**
+Last automated check: **2026-08-17T14:05:00+00:00**
 
 ## Summary
 
 - Tracked businesses/destinations: **12**
-- Healthy: **11**
-- Needs review: **1**
+- Healthy: **12**
+- Needs review: **0**
 - Unreachable: **0**
 - New official-directory links detected: **0**
-
-## Listings needing review
-
-- **Dockside Kitchen** — review: Expected business name/content was not found (https://docksidekitchen.com/)
 
 ## Important limitation
 
