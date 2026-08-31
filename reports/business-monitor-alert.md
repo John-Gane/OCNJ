@@ -1,24 +1,20 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-08-24T13:48:34+00:00**
+Last automated check: **2026-08-31T19:22:13+00:00**
 
 ## Summary
 
 - Tracked businesses/destinations: **12**
-- Healthy: **11**
-- Needs review: **1**
+- Healthy: **12**
+- Needs review: **0**
 - Unreachable: **0**
 - New official-directory links detected: **1**
-
-## Listings needing review
-
-- **Dockside Kitchen** — review: Expected business name/content was not found (https://docksidekitchen.com/)
 
 ## Possible new or changed official listings
 
 These links appeared on monitored official Ocean City directory pages after the prior baseline. Review them before adding anything to the site.
 
-- https://oceancityvacation.com/details/jillys-ice-cream-factory/
+- https://oceancityvacation.com/details/al-in-pool-care/
 
 ## Important limitation
 
