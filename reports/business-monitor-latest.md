@@ -1,6 +1,6 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-08-31T19:22:13+00:00**
+Last automated check: **2026-09-07T18:04:34+00:00**
 
 ## Summary
 
@@ -8,13 +8,7 @@ Last automated check: **2026-08-31T19:22:13+00:00**
 - Healthy: **12**
 - Needs review: **0**
 - Unreachable: **0**
-- New official-directory links detected: **1**
-
-## Possible new or changed official listings
-
-These links appeared on monitored official Ocean City directory pages after the prior baseline. Review them before adding anything to the site.
-
-- https://oceancityvacation.com/details/al-in-pool-care/
+- New official-directory links detected: **0**
 
 ## Important limitation
 
