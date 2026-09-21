@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-14T18:19:35+00:00",
+  "checked_at": "2026-09-21T18:26:52+00:00",
   "summary": {
     "total": 12,
-    "healthy": 12,
-    "review": 0,
+    "healthy": 11,
+    "review": 1,
     "unreachable": 0
   },
   "businesses": [
@@ -22,10 +22,10 @@
       "name": "Dockside Kitchen",
       "url": "https://docksidekitchen.com/",
       "final_url": "https://docksidekitchen.com/",
-      "http_status": 200,
-      "status": "healthy",
-      "reason": "Page reachable and expected content found",
-      "page_title": "Home - Dockside Kitchen"
+      "http_status": 202,
+      "status": "review",
+      "reason": "Expected business name/content was not found",
+      "page_title": ""
     },
     {
       "id": "ocean-city-paddle-company",

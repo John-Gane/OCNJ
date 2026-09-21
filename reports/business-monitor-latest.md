@@ -1,21 +1,18 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-09-14T18:19:35+00:00**
+Last automated check: **2026-09-21T18:26:52+00:00**
 
 ## Summary
 
 - Tracked businesses/destinations: **12**
-- Healthy: **12**
-- Needs review: **0**
+- Healthy: **11**
+- Needs review: **1**
 - Unreachable: **0**
-- New official-directory links detected: **2**
+- New official-directory links detected: **0**
 
-## Possible new or changed official listings
+## Listings needing review
 
-These links appeared on monitored official Ocean City directory pages after the prior baseline. Review them before adding anything to the site.
-
-- https://oceancityvacation.com/details/dockside-kitchen/
-- https://oceancityvacation.com/details/jon-pattys-coffee-bar-bistro/
+- **Dockside Kitchen** — review: Expected business name/content was not found (https://docksidekitchen.com/)
 
 ## Important limitation
 
