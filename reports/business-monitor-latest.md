@@ -1,6 +1,6 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-09-28T19:58:18+00:00**
+Last automated check: **2026-10-12T21:32:06+00:00**
 
 ## Summary
 
@@ -8,7 +8,14 @@ Last automated check: **2026-09-28T19:58:18+00:00**
 - Healthy: **12**
 - Needs review: **0**
 - Unreachable: **0**
-- New official-directory links detected: **0**
+- New official-directory links detected: **2**
+
+## Possible new or changed official listings
+
+These links appeared on monitored official Ocean City directory pages after the prior baseline. Review them before adding anything to the site.
+
+- https://oceancityvacation.com/details/american-legion-post-524-ocean-city/
+- https://oceancityvacation.com/details/landmark-cafe/
 
 ## Important limitation
 
