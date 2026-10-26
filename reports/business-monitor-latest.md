@@ -1,6 +1,6 @@
 # OCNJ Business Monitor
 
-Last automated check: **2026-10-19T18:58:20+00:00**
+Last automated check: **2026-10-26T19:00:09+00:00**
 
 ## Summary
 
